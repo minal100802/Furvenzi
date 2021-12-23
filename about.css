@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f8eded;
+  font-family: 'Ovo', serif;
+  font-weight: lighter;
+}
+.banner {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-end;
+  padding-left: 570px;
+  padding-bottom: 80px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 0px;
+  z-index: 1000;
+  transition: 0.5s;
+}
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #666;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+  font-size: 1.5em;
+  padding-left: 0px;
+  margin-left: 20px;
+}
+header.sticky ul li a{
+  color: #666;
+}
+header.sticky {
+  background: #f8eded;
+  padding: 40px 0px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  color: #666;
+}
+header .logo {
+  font-weight: 550;
+  color: #666;
+  text-decoration: none;
+  font-size: calc(1rem + 1.5vw);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+  margin-left: 100px;
+}
+header.sticky .logo {
+  color: #666;
+}
+
+.logo .paw {
+  color: white;
+  transform: rotate(-35deg);
+  opacity: 0.5;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+h5 {
+  margin-bottom: 20px;
+  font-family: 'Ovo', serif;
+  font-weight: lighter;
+  font-size: 20px;
+  color: #666;
+}
+.container {
+  padding: 50px;
+  text-align: center;
+  font-family: 'Ovo', serif;
+  font-size: large;
+  font-weight: lighter;
+  color: #707070;
+}
+
+.container h1 {
+  font-family: 'Ovo', serif;
+  padding-top: 100px;
+  padding-bottom: 15px;
+  font-size: 50px;
+  font-weight: lighter;
+  color: #666;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 0;
+}
+
+.heading {
+  font-size: 60px;
+  color: white;
+  font-family: 'Ovo', serif;
+  font-weight: lighter;
+}
+
+.heading span {
+  font-size: 30px;
+  font-family: 'Ovo', serif;
+  font-weight: lighter;
+}
+
+.profiles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 100px;
+}
+
+.profile {
+  flex-basis: 260px;
+  margin-bottom: 70px;
+}
+
+.profile .profile-img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.user-name {
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-family: 'Ovo', serif;
+  margin-top: 20px;
+  font-weight: lighter;
+  color: #666;
+}
+.icons a {
+  color: white;
+}
+.icons a:hover {
+  color: black;
+}
+.icons {
+  list-style-type: none;
+  background: #f36a8d;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  margin: 0 0.5rem;
+  border-radius: 200%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.icons:hover {
+  background: #edffec;
+  color: #000;
+}
+.pull-left {
+  float: left;
+}
+
+.h4 {
+  font-size: 18px;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  font-family: 'Ovo', serif;
+  color: #666;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  background: white;
+  color: #666;
+}
+.home-class{
+  position: relative;
+  right: 89px;
+}
+.service-class{
+  right: 90px;
+}
+.contact-class{
+  right: 95px;
+}
+.about-class{
+  right: 99px;
+}
+.signout-class{
+  right: 99px;
+}
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    flex-direction: column;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header,
+  header.sticky {
+    padding: 20px 0px;
+    z-index: 1000;
+  }
+  .menu {
+    position: fixed;
+    top: 75px;
+    left: -130%;
+    display: block;
+    padding: 100px 0px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #f8eded;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .menu.active {
+    left: 0px;
+  }
+  header ul li a {
+    color: #666;
+    font-size: 24px;
+    margin: 10px;
+    left: 70px;
+  }
+  .toggle {
+    width: 40px;
+    height: 40px;
+    background: url(images/hamburger.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+    margin-right: 30px;
+    transform: rotate(90deg);
+  }
+  .toggle.active {
+    background: url(images/cancel.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  .heading {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 15px;
+  }
+
+  .profiles {
+    margin: 20px 0;
+  }
+}

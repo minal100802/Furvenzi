@@ -1,0 +1,194 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ovo", serif;
+  }
+  
+  body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: #f8eded;
+    overflow: hidden;
+  }
+  
+  .container {
+    max-width: 850px;
+    width: 100%;
+    height: 610px;
+    background: #ffffff;
+    padding: 20px 30px ;
+    border-radius: 30px;
+  }
+
+  .profile-pic-div{
+    margin-top: 90px;
+    margin-bottom: 80px;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px dotted grey;
+    
+  }
+  
+  #photo{
+    height: 100%;
+    width: 100%;
+  }
+  
+  #file{
+    display: none;
+  }
+  
+  #uploadBtn{
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: wheat;
+    line-height: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .container .title {
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    font-family: cursive;
+    position: relative;
+    color: #666;
+  }
+  
+  .container .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+  }
+  
+  .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0 12px 0;
+    margin-top: -150px;
+  }
+  
+  .user-details .input-box {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 15px;
+    width: calc(100% / 2 - 95px);
+  }
+  
+  .user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  .user-details .input-box select {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  form .button {
+    display: flex;
+    position: relative;
+    height: 40px;
+    margin: 40px 90px;
+    right: 400px;
+    width: 150%;
+    top: -10px;
+    font-size: 2rem;
+    font-weight: 250;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 830px;
+  }
+  
+  form .button input {
+    position: relative;
+    background-color: #98ddca;
+    color: white;
+    justify-content: center;
+    text-align: center;
+  }
+  form .button input[type="submit"] {
+      height: 50px;
+      width: 170px;
+      border-radius: 10px;
+      font-size: 25px;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+      border: none;
+  }
+  
+  form .button input:hover {
+    background: #347a66;
+  }
+  
+  @media (max-width: 584px) {
+    .container {
+      max-width: 100%;
+    }
+    form .user-details .input-box {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+  
+    .container form .user-details {
+      max-height: 300px;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+    }
+  
+    .user-details::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+  

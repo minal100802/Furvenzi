@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="signup(en).css">
+  <link rel="shortcut icon" href="../images/logotitle.png" type="image/png"/>
+  <title>Sign Up</title>
+</head>
+
+<body>
+  <!-- <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="circle-3"></div>
+    <div class="circle-4"></div> -->
+  <div id="login-box">
+    <div class="right">
+      <h1>Sign Up</h1>
+      <div>
+        <div class="btn-group">
+          <button onclick="window.location.href='signup(in)1.php';" class="btn btn-individual">Individual</button>
+            <button onclick="window.location.href='signup(en)1.php';" class="btn btn-enterprise">Enterprise</button>
+        </div>
+        </div>
+        
+        <div class = "form">
+        <form action = "signup(en).php" method = "post">
+      <div class="input-box">
+        <input class="enterprise-name" type="text" name="enterprisename" placeholder="Enterprise Name" />
+        <input class="text" type="text" name="email" placeholder="Email" />
+        <input type="password" name="password" placeholder="Password" />
+        <input type="text" name="mobile" placeholder="Contact Number" />
+        <input type="text" name="postal_code" placeholder="CST or VAT no." />
+
+        <input class="com-add" type="text" name="address" placeholder="Commercial Address" />
+      </div>
+      <!-- <button class="social-signin-google"><img class="Gimg"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/768px-Google_%22G%22_Logo.svg.png"></button>
+      <button class="social-signin-facebook"><img class="Fimg"
+          src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png"></button>
+      <button class="social-signin twitter">Log in with Twitter</button> -->
+
+      <input class="submit-button" type="submit" name="signup_submit" value="Sign-up" />
+      <label class="sign-in-link">Already a member ?<a class="sign-link" href="../Signin/signin(en).php">Sign-In</a></label>
+    </div>
+    </div>
+    <div class="left">
+      <div class="lefttxt">
+        <h1 class="ltxt">Furvenzi<img class="pawimg"
+            src="https://upload.wikimedia.org/wikipedia/commons/1/12/Black_Paw.svg"></h1>
+        <h3 class="ptxt">Its All About Pets</h3>
+      </div>
+      <img class="leftimg"
+        src="https://cdn.magnify360.com/client_files/client_5544/3883/24983/images/ec-1-collars2.png">
+    </div>
+    <!-- <div class="or">OR</div> -->
+  </div>
+</body>
+
+</html>

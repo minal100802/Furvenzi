@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sellchat.css">
+    <link rel="shortcut icon" href="images/logotitle.png" type="image/png"/>
+    <title>Chat Furvenzi</title>
+</head>
+<body>
+    <header>
+        <a href="index.php" class="logo">Furvenzi <img class="paw" src="images/paw-black-shape.png" alt="paw"/></a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+          <li class="home-class"><a href="index.php" onclick="toggleMenu();">Home</a></li>
+          <li class="service-class"><a href="index.php" onclick="toggleMenu();">Services</a></li>
+          <li class="contact-class"><a href="index.php" onclick="toggleMenu();">Contact Us</a></li>
+          <li class="about-class"><a href="about.html" onclick="toggleMenu();">About Us</a></li>
+          <li class="signout-class"><a href="Signin/signin(in).php" onclick="toggleMenu();">Signout</a></li>
+        </ul>
+      </header>
+
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+
+
+<div id="chatbox">
+	<div id="friendslist">
+    	<div id="topmenu">
+            <h2>Welcome</h2>
+        </div>
+        
+        <div id="friends">
+        	<div class="friend">
+            	
+                <p>
+                	<strong>Name 1</strong>
+                  <br>
+	                <span>abcd@gmail.com</span>
+                </p>
+                <div class="status available"></div>
+            </div>
+            
+            <div class="friend">
+            	
+                <p>
+                  <strong>Name 1</strong>
+                  <br>
+	                <span>abcd@gmail.com</span>
+                </p>
+                <div class="status away"></div>
+            </div>
+            
+            <div class="friend">
+            	
+                <p>
+                  <strong>Name 1</strong>
+                  <br>
+	                <span>abcd@gmail.com</span>
+                </p>
+              
+            </div>
+            
+            <div class="friend">
+            	
+                <p>
+                  <strong>Name 1</strong>
+                  <br>
+	                <span>abcd@gmail.com</span>
+                </p>
+                
+            </div>
+            
+            <div class="friend">
+            	
+                <p>
+                  <strong>Name 1</strong>
+                  <br>
+	                <span>abcd@gmail.com</span>
+                </p>
+                
+            </div>
+            
+            
+            
+        </div>                
+        
+    </div>	
+    
+    <!-- <div id="chatview" class="p1">    	
+        <div id="profile">
+
+            <div id="close">
+                <div class="cy"></div>
+                <div class="cx"></div>
+            </div>
+            
+            <strong>Name 1</strong>
+            <br>
+            <span>abcd@gmail.com</span>
+        </div>
+        <div id="chat-messages">
+        	<label>This is the beginning of the Chat</label>
+            
+            <div class="message">
+          
+                <div class="bubble">
+                	Really cool stuff!
+                    <div class="corner"></div>
+                    <span>Anirudh</span>
+                </div>
+            </div>
+            
+            <div class="message right">
+    
+                <div class="bubble">
+                	Can you share a link for the tutorial?
+                    <div class="corner"></div>
+                    <span>Hemang</span>
+                </div>
+            </div>
+            
+            <div class="message">
+  
+                <div class="bubble">
+                	Yeah, hold on
+                    <div class="corner"></div>
+                    <span>Anirudh</span>
+                </div>
+            </div>
+            
+            <div class="message right">
+            
+                <div class="bubble">
+                	Can you share a link for the tutorial?
+                    <div class="corner"></div>
+                    <span>Hemang</span>
+                </div>
+            </div>
+            
+            <div class="message">
+        
+                <div class="bubble">
+                	Yeah, hold on
+                    <div class="corner"></div>
+                    <span>Anirudh</span>
+                </div>
+            </div>
+            
+        </div>
+    	
+        <div id="sendmessage">
+        	<input type="text" value="Send message..." />
+            <button id="send"></button>
+        </div>
+    
+    </div>         -->
+</div>	 
+
+
+   <footer class="footer">
+    <p>Copyright © 2021 Furvenzi All Rights Reserved</p>
+  </footer> 
+
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        
+        <script src="sellchat.js"></script>
+
+        <!-- <script>
+          $(document).ready(function(){
+	
+  var preloadbg = document.createElement("img");
+  preloadbg.src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/timeline1.png";
+  
+  $("#searchfield").focus(function(){
+    if($(this).val() == "Search contacts..."){
+      $(this).val("");
+    }
+  });
+  $("#searchfield").focusout(function(){
+    if($(this).val() == ""){
+      $(this).val("Search contacts...");
+      
+    }
+  });
+  
+  $("#sendmessage input").focus(function(){
+    if($(this).val() == "Send message..."){
+      $(this).val("");
+    }
+  });
+  $("#sendmessage input").focusout(function(){
+    if($(this).val() == ""){
+      $(this).val("Send message...");
+      
+    }
+  });
+    
+  
+  $(".friend").each(function(){		
+    $(this).click(function(){
+      var childOffset = $(this).offset();
+      var parentOffset = $(this).parent().parent().offset();
+      var childTop = childOffset.top - parentOffset.top;
+      var clone = $(this).find('img').eq(0).clone();
+      var top = childTop+12+"px";
+      
+      $(clone).css({'top': top}).addClass("floatingImg").appendTo("#chatbox");									
+      
+      setTimeout(function(){$("#profile p").addClass("animate");$("#profile").addClass("animate");}, 100);
+      setTimeout(function(){
+        $("#chat-messages").addClass("animate");
+        $('.cx, .cy').addClass('s1');
+        setTimeout(function(){$('.cx, .cy').addClass('s2');}, 100);
+        setTimeout(function(){$('.cx, .cy').addClass('s3');}, 200);			
+      }, 150);														
+      
+      $('.floatingImg').animate({
+        'width': "68px",
+        'left':'108px',
+        'top':'20px'
+      }, 200);
+      
+      var name = $(this).find("p strong").html();
+      var email = $(this).find("p span").html();														
+      $("#profile p").html(name);
+      $("#profile span").html(email);			
+      
+      $(".message").not(".right").find("img").attr("src", $(clone).attr("src"));									
+      $('#friendslist').fadeOut();
+      $('#chatview').fadeIn();
+    
+      
+      $('#close').unbind("click").click(function(){				
+        $("#chat-messages, #profile, #profile p").removeClass("animate");
+        $('.cx, .cy').removeClass("s1 s2 s3");
+        $('.floatingImg').animate({
+          'width': "40px",
+          'top':top,
+          'left': '12px'
+        }, 200, function(){$('.floatingImg').remove()});				
+        
+        setTimeout(function(){
+          $('#chatview').fadeOut();
+          $('#friendslist').fadeIn();				
+        }, 50);
+      });
+      
+    });
+  });			
+});
+        </script> -->
+</body>
+</html>

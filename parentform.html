@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="parentform.css">
+        <link rel="shortcut icon" href="images/logotitle.png" type="image/png"/>
+        <title>List For Parenting</title>
+    </head>
+    <body>
+  
+        
+        <div class="container">
+            <div class="title"><u> Some Information About Your Furry Friend</u></div>
+            <div class="profile-pic-div">
+                <img src="image.jpg" id="photo">
+                <input type="file" id="file">
+                <label for="file" id="uploadBtn">Choose Photo</label>
+              </div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Select Your Pet</span>
+                        <select name="Dog-Cat" id="dog-cat">
+                            <option value="#">Dog</option>
+                            <option value="#">Cat</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Breed</span>
+                        <input type="text" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Weight</span>
+                        <input type="text" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Gender</span>
+                        <select name="Gender" id="gender">
+                            <option value="#">Male</option>
+                            <option value="#">Female</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">From Date</span>
+                        <input type="text" required placeholder="DD/MM/YYYY">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">To Date</span>
+                        <input type="text" required placeholder="DD/MM/YYYY">
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+      
+        <script src="parentform.js"></script>
+    </body>
+</html>
